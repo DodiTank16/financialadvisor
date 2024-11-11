@@ -86,13 +86,13 @@ app.use('/api/faq', faqRoutes);
 app.use('/api/terms', termsConditionsRoutes);
 app.use('/api/privacy', privacyPolicyRoutes);
 
-if (process.env.NODE_ENV === "production") {
+// if (process.env.NODE_ENV === "production") {
   app.use("/", express.static("client/build"));
 
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client/build/index.html"));
   });
-}
+// }
 const port = process.env.PORT || 6000;
 
 app.get("/", (req, res) => res.send("Hello World!"));
