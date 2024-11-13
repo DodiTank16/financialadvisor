@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/";
+// const API_URL = "http://localhost:5000/api/";
+const API_URL = "http://3.128.53.252/api/";
+
 
 const defaultOptions = {
     baseURL: API_URL,

@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node server.js"
   },
-  "author": "Dhrupad Patel",
+  "author": "Dodi Tank and Dhrupad Patel",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
